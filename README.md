@@ -27,17 +27,50 @@ learnings/          Durable rules distilled from past sessions (writing, tailori
 proposed_learnings/ Staged learnings awaiting human approval
 ```
 
-## Usage
+## Getting started
 
-Open this repo in Cursor (or any AI agent with file access) and ask it to:
+### Prerequisites
 
-- **"Generate a resume for [role]"** — produces a tailored `.tex` file from your data
-- **"Is this role a good fit?"** — evaluates a JD against your profile, asks probing questions, and gives a structured verdict
-- **"Review this resume as a hiring manager"** — multi-persona critique with actionable feedback
-- **"Write a cover letter for [company]"** — narrative that complements the resume without repeating it
-- **"Improve this bullet"** — rewrites a single bullet for clarity, impact, and keyword alignment
+- An AI coding agent with file access. Any of these work:
+  - [Cursor](https://cursor.sh) (open this folder as a workspace)
+  - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (run `claude` in this directory — it reads `CLAUDE.md` automatically)
+  - [GitHub Copilot](https://github.com/features/copilot) in VS Code with chat enabled
+  - Any LLM with file read/write access
+- [LaTeX](https://www.tug.org/texlive/) installed locally to compile `.tex` output to PDF (`brew install --cask basictex` on macOS)
 
-The agent reads `AGENTS.md` for instructions on where to find skills, workflows, personas, and data.
+### Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/mt109/resume-system.git
+   cd resume-system
+   ```
+
+2. Open it in your AI agent of choice.
+
+3. Start by asking any of the prompts below — the agent reads `AGENTS.md` for instructions on where to find skills, workflows, personas, and data.
+
+### What you can ask
+
+| Prompt | What happens |
+|--------|-------------|
+| "Generate a resume for [role]" | Produces a tailored `.tex` resume from the candidate's data |
+| "Tailor for this job" + paste a JD | Analyzes the JD, matches evidence, reframes language, outputs a role-specific resume |
+| "Is this role a good fit?" | Evaluates a JD against the candidate's profile, asks probing questions, gives a structured verdict |
+| "Review this resume as a hiring manager" | Multi-persona critique with actionable feedback |
+| "Write a cover letter for [company]" | Narrative that complements the resume without repeating it |
+| "Improve this bullet" | Rewrites a single bullet for clarity, impact, and keyword alignment |
+
+### Adding a new target role
+
+1. Create `roles/{company}_{role}.md` with the job description, keywords, tailoring emphasis, and gap notes. See existing files in `roles/` for the format.
+2. Ask the agent to generate a resume or cover letter for that role — it will use the role file automatically.
+
+### Compiling a resume to PDF
+
+```bash
+pdflatex -output-directory versions versions/{company}_{role}.tex
+```
 
 ## Design principles
 
