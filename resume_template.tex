@@ -1,0 +1,42 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.3em}
+
+\begin{document}
+
+% --- HEADER: filled from data/profile.json ---
+\begin{center}
+  {\LARGE \textbf{Your Name}} \\
+  \href{mailto:you@example.com}{you@example.com} \quad $|$ \quad
+  +1 (555) 000-0000 \quad $|$ \quad
+  City, State \quad $|$ \quad
+  \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+\end{center}
+\vspace{0.2em}
+
+% --- EXPERIENCE: filled from data/experiences.json + content/master_bullets ---
+\section*{Experience}
+
+\subsection*{Senior Product Manager \hfill Example Corp \hfill 2021 -- Present}
+\begin{itemize}[leftmargin=*, nosep]
+  \item Led roadmap for core product; shipped 3 major features that increased DAU by 24\%.
+  \item Drove cross-functional alignment across engineering, design, and go-to-market for 4 launches.
+  \item Defined and tracked north-star and guardrail metrics; reduced churn by 12\% in 6 months.
+\end{itemize}
+
+\subsection*{Product Manager \hfill Previous Company \hfill 2018 -- 2021}
+\begin{itemize}[leftmargin=*, nosep]
+  \item Owned discovery and delivery for B2B dashboard; grew enterprise ARR by \$2M in 18 months.
+  \item Ran A/B tests and user research; prioritized backlog that improved NPS from 32 to 48.
+  \item Mentored 2 associate PMs and established team rituals for planning and retros.
+\end{itemize}
+
+% --- EDUCATION: filled from data/profile.json ---
+\section*{Education}
+B.S. Computer Science, University Name, 2018
+
+\end{document}

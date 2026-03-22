@@ -1,0 +1,61 @@
+{
+  "impact": [
+    {
+      "label": "Offer Wallet — projected gross revenue (campaign cycle)",
+      "value": "$76M",
+      "context": "$69M net; vs $37M gross for entire prior FY — PM intern workstream (commerce promotions)"
+    },
+    {
+      "label": "Offer value delivered to customers (projected cycle)",
+      "value": "$62M+",
+      "context": "Offer Wallet campaigns across ecosystem"
+    },
+    {
+      "label": "Offer Wallet — early campaign reach",
+      "value": "500K+ users",
+      "context": "Net-new reachable vs. legacy tooling; $3M in offers (first two campaigns)"
+    },
+    {
+      "label": "Redemption vs. legacy XMF",
+      "value": "~2×",
+      "context": "Sustained rates, slower decay after launch"
+    },
+    {
+      "label": "Commerce surfaces",
+      "value": "4+",
+      "context": "Console, PC App, Xbox.com, Mobile — subscription integrations"
+    },
+    {
+      "label": "Partner integrations (examples)",
+      "value": "Fortnite Crew, Ubisoft+ Classics",
+      "context": "Game Pass Ultimate bundling and standalone subscription launch"
+    }
+  ],
+  "scale": [
+    {
+      "label": "Organizations aligned",
+      "value": "4",
+      "context": "Commerce, identity, platform services, merchandising (intern project)"
+    },
+    {
+      "label": "Stakeholder groups",
+      "value": "Engineering, Design, GTM, Legal, Finance",
+      "context": "Cross-functional execution at Microsoft Xbox"
+    },
+    {
+      "label": "Mentorship",
+      "value": "PM intern + GEL section",
+      "context": "Mentor PM intern; led GEL lab section mentors through graduation (May 2025)"
+    },
+    {
+      "label": "Cross-org v-team reach",
+      "value": "9 orgs",
+      "context": "Virtual team forum with internal, intern, and cross-org participation"
+    },
+    {
+      "label": "Digital literacy students taught",
+      "value": "200+",
+      "context": "Middle-school girls — Lahore and village (PowerPoint, Word, digital privacy)"
+    }
+  ]
+}

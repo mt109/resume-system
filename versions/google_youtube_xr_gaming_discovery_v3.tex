@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+
+\vspace*{-0.5in}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{xstring}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% First-letter-bigger macro
+\newcommand{\FirstBig}[1]{%
+  \StrLeft{#1}{1}[\FirstChar]%
+  \StrGobbleLeft{#1}{1}[\RestChars]%
+  {\large\bfseries\FirstChar}\RestChars%
+}
+
+% Section style
+\titleformat{\section}
+  {\scshape\Large}
+  {}{0pt}{\FirstBig}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.25em, itemsep=2pt, topsep=2pt}
+
+% Two-column helpers
+\newcommand{\twocol}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\FirstBig{#1}} & \textbf{#2} \\
+  \end{tabularx}
+}
+
+\newcommand{\roleline}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textit{#1} & \textit{#2} \\
+  \end{tabularx}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\LARGE\bfseries
+    {\huge M}ALAHIM {\huge T}ARIQ
+  }\vspace{4pt}\\
+  Redmond, WA 98052 \;\textbullet\;
+  \href{mailto:mt109@wellesley.edu}{mt109@wellesley.edu} \;\textbullet\;
+  929-822-1351 \;\textbullet\;
+  \href{https://www.linkedin.com/in/malahim-tariq}{linkedin.com/in/malahim-tariq}
+\end{center}
+
+\vspace{2pt}
+\noindent\textbf{Product Manager} $|$ \textbf{Gaming, Discovery Systems \& XR Experiences} \\
+\noindent Focused on how users \textbf{discover and engage with content} across surfaces. Experience owning \textbf{content surfacing}, \textbf{experimentation}, and \textbf{0$\to$1 product delivery} in Xbox gaming commerce (Console, PC, Web, Mobile). \textbf{Unity VR} builder; \textbf{ML research} (LSTM, Neural Prophet) and coursework (TensorFlow, PyTorch).
+
+% Professional Experience
+\section{Professional Experience}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Product Manager $|$ Gaming, Discovery Systems \& XR}{Jul 2025 -- Present}
+\begin{itemize}
+  \item Own \textbf{content surfacing and discovery} for third-party subscription experiences across \textbf{four gaming surfaces} (Console, PC App, Xbox.com, Mobile)---defining \textbf{what content appears}, \textbf{where}, and \textbf{to whom} across purchase, renewal, and entitlement flows.
+  \item Led \textbf{0$\to$1} integration of Fortnite Crew and Ubisoft+ Classics into Game Pass Ultimate, improving \textbf{discoverability} for subscription-based gaming content and expanding access to new catalogs across all client surfaces.
+  \item Defined cross-system \textbf{identity and entitlement} rules (activation, linking, renewal, revocation) to reduce ambiguous user states---ensuring \textbf{personalization} and \textbf{content recommendations} remain trustworthy and consistent across devices.
+  \item Designed and evaluated \textbf{product experiments} to improve \textbf{content engagement} and subscription conversion; built an \textbf{experimentation skill} into the team AI repo (GitHub Copilot) to standardize \textbf{hypothesis-driven testing} and reusable evaluation workflows.
+  \item \textbf{Audited} the third-party content and commerce ecosystem; authored \textbf{integration principles} governing content surfacing standards, UX parity, and revenue visibility---directly informing \textbf{roadmap prioritization} and partner onboarding strategy.
+  \item Analyzed \textbf{user engagement} and storefront interaction patterns to inform improvements in \textbf{content placement}, navigation, and \textbf{conversion funnels} across merchandising surfaces.
+\end{itemize}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Product Manager Intern --- Xbox Storefront (Commerce)}{May 2024 -- Aug 2024}
+\begin{itemize}
+  \item Contributed to \textbf{Offer Wallet}, a next-gen \textbf{content promotions and discovery} platform: improved how offers are \textbf{surfaced and recommended} to players vs.\ legacy tooling; sustained \textbf{$\sim$2$\times$ engagement} (redemption rates) with a \textbf{slower decay curve}, indicating stronger \textbf{content-user matching}.
+  \item Defined \textbf{success metrics} (redemption rate, activation, reach) and \textbf{MVP} scope; supported a \textbf{near-doubling} of campaign velocity (\textbf{15+} campaigns vs.\ \textbf{8} in full FY23), reaching \textbf{500K+} previously untargetable users and projecting \textbf{\$76M} gross revenue vs.\ \textbf{\$37M} in the prior fiscal year.
+  \item Applied \textbf{data-driven} prioritization across commerce, identity, platform services, and merchandising to optimize \textbf{content delivery}, \textbf{user targeting}, and \textbf{fraud-safe} redemption flows.
+\end{itemize}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Explore Intern (PM + SWE)}{May 2023 -- Aug 2023}
+\begin{itemize}
+  \item Built storefront product detail page features in \textbf{C\#}, TypeScript, and React, improving \textbf{catalog presentation} and \textbf{content navigation} for Xbox console users at scale.
+\end{itemize}
+
+% Skills
+\section{Skills}
+
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}l X @{}}
+  Product:       & 0$\to$1 product development, content surfacing \& ranking logic, experimentation \& A/B testing, product analytics (engagement, retention, conversion funnels), roadmap prioritization, stakeholder alignment \\[3pt]
+  Technical:     & C\#, Python, SQL, TypeScript, React, Unity (VR), TensorFlow, PyTorch, scikit-learn, Pandas; data modeling, API design, ML foundations \& recommendation signals \\[3pt]
+  Domain:        & Gaming ecosystems, content discovery \& recommendation systems, XR / immersive interfaces, subscription \& monetization platforms \\[3pt]
+  Languages:     & Urdu (fluent), Punjabi (conversational), English (fluent) \\
+\end{tabularx}
+
+% Education
+\section{Education}
+
+\twocol{Wellesley College}{Wellesley, MA}
+\roleline{B.A.\ in Computer Science, Minor in Philosophy}{May 2025}
+\vspace{1pt}
+\textbf{Coursework:} AI, Algorithms, Statistics, HCI, Data Structures \quad
+\textbf{Honors:} Graduation Speaker (First-Gen Ceremony, 2025); Welcome Ceremony Speaker (2023); Camellia Leadership Award Nominee (2024) \\[2pt]
+\textbf{ML Research} (Jan--May 2024): Experimented with LSTM and Neural Prophet on NYC taxi data to evaluate ML-driven demand forecasting; supervised by Christine Bassem. \\[2pt]
+\textbf{XR / VR:} Design and build immersive experiences in Unity; explore how spatial interfaces change content discovery and user engagement vs.\ 2D platforms.
+
+% Leadership
+\section{Leadership}
+\textbf{MIT GEL} -- Section lead and mentor (TA), Engineering Leadership Lab 6.9110 (Sep 2023 -- May 2025); managed peer mentors, set section vision. \\
+\textbf{Digital Literacy Campaign} -- Founded and ran a digital skills program for 200+ girls in Lahore, Pakistan (May 2019 -- Dec 2025); designed curriculum, taught classes.
+
+\end{document}

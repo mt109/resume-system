@@ -1,0 +1,60 @@
+{
+  "name": "Malahim Tariq",
+  "email": "mt109@wellesley.edu",
+  "phone": "929-822-1351",
+  "location": "Redmond, WA 98052",
+  "linkedin": "https://www.linkedin.com/in/malahim-tariq",
+  "headline": "Product Manager — Xbox commerce, subscriptions, identity & monetization across console, PC, web, and mobile",
+  "education": [
+    {
+      "degree": "B.A. Computer Science, Minor in Philosophy",
+      "school": "Wellesley College",
+      "year": "2025",
+      "location": "Wellesley, MA",
+      "relevant_coursework": [
+        "Multivariable Calculus",
+        "Linear Algebra",
+        "CS 230 (Data Structures)",
+        "CS 220 (HCI)",
+        "Statistics 218",
+        "Algorithms",
+        "CS 232 (AI)",
+        "Economics 102 (Intro to Macroeconomics)"
+      ]
+    }
+  ],
+  "professional_development": [
+    {
+      "name": "Claude Code for Product Managers",
+      "url": "https://ccforpms.com",
+      "focus": "Hands-on Claude Code for PM work—agents, sub-agents, project memory, PRDs, data analysis, strategy (interactive course run inside Claude Code)",
+      "year": "2025",
+      "note": "Independent course by Carl Vellotti; see site disclaimer re: Anthropic affiliation."
+    }
+  ],
+  "community": [
+    "Class of 2025 Alumni Council — reunion & class events, class updates, newsletter",
+    "Wellesley Club of Washington State — Board; Young Alumnae Chair & Communications Chair (Mar 2026 – Present)",
+    "Digital Literacy Campaign (Pakistan) — founder; curriculum + teaching",
+    "Wellesley PSA — Secretary/Treasurer/Senator; Al-Muslimat — Senator/Lecture Chair"
+  ],
+  "honors": [
+    "Graduation Speaker — First-Generation Student Ceremony (2025)",
+    "Selected Speaker — Wellesley College Welcome Ceremony (2023)",
+    "Flower Sunday Speaker (2023)",
+    "Camellia Student Leadership Award Nominee (2024)"
+  ],
+  "skills": {
+    "technical": "Python, Java, HTML, R, MATLAB, Arduino, C#, JavaScript, React, InVision (prototyping), LaTeX, TensorFlow, PyTorch, Keras, Scikit-learn, Pandas, Seaborn, NumPy, LSTM, Neural Prophet",
+    "gaming_xr": "Unity — VR game development (personal projects / portfolio; edit with titles or links if you use them on resumes)",
+    "languages_spoken": "Urdu (fluent), Punjabi (conversational), English (fluent)",
+    "product_strategy": "Platform product development, subscription & monetization systems, identity and entitlement lifecycle design, cross-surface UX consistency, roadmap prioritization, MVP scoping, tradeoff analysis, success metrics definition",
+    "technical_fluency": "Authentication & account linking flows, entitlement state management, distributed systems fundamentals, API contract design, data modeling, SQL, Python, C#",
+    "execution_leadership": "Cross-functional leadership (Engineering, Design, GTM, Legal, Finance), partner negotiations, contract-driven delivery, launch readiness orchestration, ambiguity navigation, stakeholder alignment across multi-org environments",
+    "leadership": "Facilitation and forum leadership (C-suite intern programming, 9-org v-team, membership ship rooms); mentorship and hiring (PM intern interviews, former GEL section lead through May 2025); volunteer board leadership (young alumnae & communications chairs); launch readiness and cross-functional orchestration",
+    "culture_inclusion": "Psychological safety and cohort culture; inclusive community building (HHMI / CS DEI, class & alum engagement); clear expectations and belonging in early-career programs; newsletters and sustained class connection; global digital literacy and advocacy (Pakistan)",
+    "communication_presence": "Executive-ready storytelling; public speaking (graduation & welcome ceremonies, leadership forums); distills complex work into decisions and narratives stakeholders can act on",
+    "personal_effectiveness": "Bar-raising judgment; ambiguity navigation; partner- and contract-aware delivery; feedback-seeking (GPT onboarding assistant validated with managers and new hires); disciplined follow-through across long-horizon roadmaps",
+    "fitness_wellness": "Exercise and physical training—replace with your modalities (e.g., strength training, running, cycling, yoga, team sports)"
+  }
+}

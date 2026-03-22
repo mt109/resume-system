@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+
+\vspace*{-0.5in}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{xstring}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\FirstBig}[1]{%
+  \StrLeft{#1}{1}[\FirstChar]%
+  \StrGobbleLeft{#1}{1}[\RestChars]%
+  {\large\bfseries\FirstChar}\RestChars%
+}
+
+\titleformat{\section}
+  {\scshape\Large}
+  {}{0pt}{\FirstBig}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{leftmargin=1.25em, itemsep=2pt, topsep=2pt}
+
+\newcommand{\twocol}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\FirstBig{#1}} & \textbf{#2} \\
+  \end{tabularx}
+}
+
+\newcommand{\roleline}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textit{#1} & \textit{#2} \\
+  \end{tabularx}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\LARGE\bfseries
+    {\huge M}ALAHIM {\huge T}ARIQ
+  }\vspace{4pt}\\
+  Redmond, WA 98052 \;\textbullet\;
+  \href{mailto:mt109@wellesley.edu}{mt109@wellesley.edu} \;\textbullet\;
+  929-822-1351 \;\textbullet\;
+  \href{https://www.linkedin.com/in/malahim-tariq}{linkedin.com/in/malahim-tariq}
+\end{center}
+
+\vspace{2pt}
+\noindent\textbf{Product Manager} $|$ \textbf{Platform, Commerce \& Ecosystem Products} \\
+\noindent Focused on building \textbf{cross-platform experiences} that scale. Experience owning \textbf{0$\to$1 product delivery}, \textbf{experimentation}, and \textbf{partner integrations} across Xbox gaming commerce (Console, PC, Web, Mobile). Background in \textbf{ML research}, \textbf{data-driven prioritization}, and \textbf{cross-functional execution} spanning engineering, design, legal, and GTM.
+
+% Professional Experience
+\section{Professional Experience}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Product Manager, Storefront Commerce \& Platform}{Jul 2025 -- Present}
+\begin{itemize}
+  \item Own third-party subscription integrations and monetization across \textbf{four surfaces} (Console, PC App, Xbox.com, Mobile)---defining product strategy for what users see, how they subscribe, and how entitlements behave across devices.
+  \item Led \textbf{0$\to$1} integration of Fortnite Crew and Ubisoft+ Classics into Game Pass Ultimate end-to-end with engineering, design, legal, and finance; expanded access to new subscription catalogs across all client surfaces.
+  \item Defined cross-system \textbf{identity and entitlement architecture} (activation, account linking, renewal, revocation, multi-device access), reducing inconsistent user states and purchase ambiguity across the platform.
+  \item Designed and evaluated \textbf{product experiments} to improve subscription engagement and conversion; built an \textbf{experimentation skill} into the team's AI system (GitHub Copilot) to standardize hypothesis-driven testing workflows.
+  \item Audited the third-party ecosystem and authored \textbf{integration principles} (entitlement standards, UX parity, lifecycle transparency, revenue visibility) that directly shaped \textbf{roadmap prioritization} and partner onboarding.
+  \item Built a \textbf{GPT-powered onboarding assistant} for new PMs and interns after observing ramp-up friction; validated with hiring managers and new hires, who cited faster time-to-productivity and clearer role expectations.
+  \item Run a recurring \textbf{v-team forum spanning nine organizations}, aligning internal teams, interns, and cross-org partners on priorities, dependencies, and shared outcomes.
+\end{itemize}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Product Manager Intern --- Xbox Storefront (Commerce)}{May 2024 -- Aug 2024}
+\begin{itemize}
+  \item Contributed to \textbf{Offer Wallet}, a next-gen promotions platform: improved UX and offer targeting vs.\ legacy tooling; sustained \textbf{$\sim$2$\times$ redemption rates} with a slower post-launch decay curve, indicating stronger user-offer matching.
+  \item Defined \textbf{success metrics} and MVP scope; supported a near-doubling of campaign velocity (\textbf{15+} campaigns vs.\ 8 in prior FY), reaching \textbf{500K+} previously untargetable users and projecting \textbf{\$76M} gross revenue vs.\ \$37M prior year.
+\end{itemize}
+
+\twocol{Microsoft --- Xbox}{Redmond, WA}
+\roleline{Explore Intern (PM + SWE)}{May 2023 -- Aug 2023}
+\begin{itemize}
+  \item Built storefront features in C\#, TypeScript, and React, developing foundational understanding of large-scale commerce services, entitlement systems, and platform architecture.
+\end{itemize}
+
+% Skills
+\section{Skills}
+
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}l X @{}}
+  Product:       & 0$\to$1 product development, platform \& ecosystem strategy, experimentation \& A/B testing, product analytics (engagement, retention, conversion funnels), roadmap prioritization, stakeholder alignment \\[3pt]
+  Technical:     & C\#, Python, SQL, TypeScript, React, Unity (VR), TensorFlow, PyTorch, scikit-learn, Pandas; API design, data modeling, ML foundations \\[3pt]
+  Execution:     & Cross-functional leadership (Engineering, Design, GTM, Legal, Finance), partner negotiations, contract-driven delivery, launch readiness orchestration \\[3pt]
+  Languages:     & Urdu (fluent), Punjabi (conversational), English (fluent) \\
+\end{tabularx}
+
+% Education
+\section{Education}
+
+\twocol{Wellesley College}{Wellesley, MA}
+\roleline{B.A.\ in Computer Science, Minor in Philosophy}{May 2025}
+\vspace{1pt}
+\textbf{Coursework:} AI, Algorithms, Statistics, HCI, Data Structures \quad
+\textbf{Honors:} Graduation Speaker (First-Gen Ceremony, 2025); Welcome Ceremony Speaker (2023); Camellia Leadership Award Nominee (2024) \\[2pt]
+\textbf{ML Research} (Jan--May 2024): Experimented with LSTM and Neural Prophet on NYC taxi data to evaluate ML-driven demand forecasting; supervised by Christine Bassem.
+
+% Leadership
+\section{Leadership}
+\textbf{Intern culture \& mentorship} -- Interview PM intern candidates; facilitate working sessions with C-suite executives to shape intern programming, cohort culture, and cross-functional collaboration norms. Mentor PM intern through feature scoping and execution. \\
+\textbf{MIT GEL} -- Section lead and mentor (TA), Engineering Leadership Lab 6.9110 (Sep 2023 -- May 2025); managed peer mentors, set section vision. \\
+\textbf{Digital Literacy Campaign} -- Founded and ran a digital skills program for 200+ girls in Lahore, Pakistan (May 2019 -- Dec 2025); designed curriculum, taught classes.
+
+\end{document}
